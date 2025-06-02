@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formations Tactiques | 11 Moves</title>
+  <link rel="stylesheet" href="css/Crée_formations.css" />
+  <script src="javaScript/Crée_formations.js" defer></script>
+</head>
+<body>
+  <!-- En-tête / barre de navigation -->
+  <header class="navbar">
+            <div class="logo">11 Moves</div>
+                <nav class="nav-links">
+                    <a href="accueil.html">Accueil</a>
+                    <a href="videos.html">Vidéos</a>
+                    <a href="Crée_formations.html" class="active">Formations</a>
+                    <a href="a propos.html">À propos</a>
+                </nav>
+            <div><button class="dark" onclick="window.location.href='Connexion.html'">Crée ton compte ➔</button></div>
+  </header>
+
+  <!-- Section principale de la page -->
+  <section class="tactic-section">
+    <h1>Visualise ta formation comme un pro</h1>
+    <p class="tactic-desc">
+      Choisis ta méthode préférée pour créer une tactique : en partant d’une base classique, en t’inspirant d’un coach mythique ou en construisant librement.
+    </p>
+
+    <!-- Section des boutons Commencer / Terminer -->
+    <div class="start-section">
+      <button id="start-btn">Commencer</button>
+      <button id="end-btn" style="display: none;">Terminer</button>
+    </div>
+
+ <div class="controls" id="options-container">
+  <select id="formation-select">
+    <option value="4-4-2">4-4-2</option>
+    <option value="4-3-3">4-3-3</option>
+    <option value="mourinho">Mourinho</option>
+    <option value="guardiola">Guardiola</option>
+    <option value="custom">Libre</option>
+  </select>
+</div>
+
+
+
+
+    
+    <!-- Terrain + joueurs, caché au chargement -->
+    <div class="field-wrapper" id="field-section" style="display: none;">
+      <img src="image/Composition joueur.png" alt="Terrain tactique" id="field-bg" />
+      <div id="players-container"></div>
+    </div>
+  </section>
+
+  <script> 
+    
+    const buttons = document.querySelectorAll('.cta-button, .dark');
+
+    buttons.forEach(bouton => {
+      bouton.addEventListener('mouseenter', () => {
+        bouton.style.transform = 'scale(1.05)';
+        bouton.style.transition = 'transform 0.2s ease';
+      });
+      bouton.addEventListener('mouseleave', () => {
+        bouton.style.transform = 'scale(1)';
+      });
+    });
+
+    const createAccountButton = document.querySelector('.dark');
+
+        if (createAccountButton) {
+            createAccountButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = 'Connexion.html';
+    });
+  }
+</script>
+
+</body>
+</html>
