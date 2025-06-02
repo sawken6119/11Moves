@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #0c0c33;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0c0c33;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.dark {
+  background-color: #0c0c33;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 80px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-photo {
+  display: block;
+  margin: 0 auto 40px; /* centre horizontalement + espace sous l'image */
+  max-width: 400px; /* réduit la taille max de l'image */
+  width: 100%;
+  border-radius: 20px;
+}
+
+.intro h1,
+.mission h2,
+.team h2,
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0c0c33;
+}
+
+.intro p,
+.mission p,
+.team p,
+.testimonials p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mission ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mission li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Équipe */
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.member {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.member img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Témoignages */
+.testimonial-box {
+  background-color: #f4f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial-box blockquote {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0c0c33;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}

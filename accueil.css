@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #0c0c33;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0c0c33;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.dark {
+  background-color: #0c0c33;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background-color: #f5dc5d;
+  color: #8a73ff;
+  padding: 10px 20px;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+.hero-image img {
+  width: 600px;
+  border-radius: 20px;
+}
+
+/* CTA Button */
+.cta-section p {
+  margin-bottom: 20px; /* ajoute un espace sous le texte */
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #0c0c33;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* <-- espace entre le texte et le bouton */
+}
+
+
+/* Features section */
+.features {
+  padding: 60px 80px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 250px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* Bloc image + texte */
+.bloque {
+  display: flex;
+  gap: 40px;
+  padding: 60px 80px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.mourinho img {
+  width: 600px;
+  border-radius: 20px;
+}
+
+.text2 {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Call to action final */
+.cta {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #e5f0ff;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #0c0c33;
+  color: white;
+  font-size: 14px;
+}
